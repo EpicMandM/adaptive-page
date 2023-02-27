@@ -22,7 +22,7 @@ article {
   flex-wrap: wrap;
 }
 .left {
-  flex: 0 0 500px;
+  flex: 0 0 600px;
   margin-right: 65px;
   margin-left: 200px;
 }
@@ -76,8 +76,14 @@ article {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 785px) {
     .left {
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .right {
+        margin: 10px;
     }
 }
