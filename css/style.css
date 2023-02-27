@@ -1,0 +1,87 @@
+html, body {
+    background-color: rgb(41, 45, 51);
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+h1 {
+    font-weight: 900;
+}
+img {
+    width: 100%;
+    max-height: 800px;
+}
+article {
+    font-style: italic;
+}
+.left {
+    float: left;
+    width: 25%;
+    margin-left: 8%;
+    margin-right: 4%;
+}
+.right {
+    float: left;
+    width: 60%;
+    max-width: 600px;
+}
+.wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .accordion-item {
+  margin: 10px;
+} */
+
+.accordion-header {
+  background-color: rgb(41, 45, 51);
+  padding: 10px 0px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+}
+
+.accordion-header i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+@media screen and (max-width: 700px)
+{
+    
+    .left {
+            width: 35%;
+            margin-left: 1%;
+        }
+}
+
+@media screen and (max-width: 500px)
+{
+    
+    .left {
+            width: 45%;
+            margin-left: 1%;
+        }
+    .right {
+        float: left;
+        width: 50%;
+        max-width: 600px;
+    }
+}
